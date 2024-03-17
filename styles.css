@@ -1,0 +1,123 @@
+/* styles.css */
+.spinner-css {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #f3f3f3; /* Light grey */
+    border-top: 3px solid #3498db; /* Blue */
+    border-radius: 50%;
+    animation: spin 5s linear infinite; /* Animation to rotate the spinner */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide Spin.js spinner by default */
+#spinner-spinjs {
+    display: none;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.pricing-card {
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+}
+
+.price {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #ff5e62;
+}
+
+button {
+    background-color: #ff5e62;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4f58;
+}
+
+footer {
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.customize {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.customize label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+}
+
+.customize select {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.customize select:focus {
+    border-color: #ff5e62;
+}

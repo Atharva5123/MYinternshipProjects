@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Additional CSS for list items */
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0; /* Remove default padding */
+            text-align: left; /* Align list items to the left */
+        }
+        li::before {
+            content: "•"; /* Add bullet before each list item */
+            margin-right: 5px; /* Adjust spacing */
+        }
+    </style>
+</head>
+<body>
+     <!-- Loading spinner container -->
+     <div class="loading-container">
+        <!-- Spinner using CSS animation -->
+        <div class="spinner-css"></div>
+        <!-- Spinner using Spin.js -->
+        <div id="spinner-spinjs"></div>
+    </div>
+    <header>
+        <h1>Coffee Beans Pricing Options</h1>
+    </header>
+    
+    <div class="customize">
+        <label for="currency">Currency:</label>
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="GBP">GBP</option>
+        </select>
+
+        <label for="units">Units:</label>
+        <select id="units">
+            <option value="kg">kg</option>
+            <option value="lbs">lbs</option>
+        </select>
+    </div>
+
+    <main>
+        <section class="pricing-card">
+            <h2>Ethiopian Yirgacheffe Beans:</h2>
+            <ul>
+                <li>Distinctive floral aroma</li>
+                <li>Bright acidity</li>
+                <li>Typically processed using traditional methods</li>
+            </ul>
+            <p class="price" data-price="10">$10</p>
+            <button>Select Plan</button>
+        </section>
+        
+        <section class="pricing-card">
+            <h2>Robusta Beans:</h2>
+            <ul>
+                <li>Strong and robust flavor</li>
+                <li>Higher caffeine content</li>
+                <li>Pronounced bitterness</li>
+                <li>Earthy or woody aroma</li>
+            </ul>
+            <p class="price" data-price="20">$20</p>
+            <button>Select Plan</button>
+        </section>
+        
+        <section class="pricing-card">
+            <h2>Arabica Beans:</h2>
+            <ul>
+                <li>Smooth and mellow flavor profile</li>
+                <li>Complexity in taste</li>
+                <li>Delicate floral aroma</li>
+                <li>Fruity undertones, varying from citrus to berry notes</li>
+                <li>Generally grown at higher altitudes</li>
+            </ul>
+            <p class="price" data-price="30">$30</p>
+            <button>Select Plan</button>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; Atharva Khairmode. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/3.1.1/spin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
